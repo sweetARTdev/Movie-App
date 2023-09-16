@@ -52,6 +52,7 @@ const Card = styled.div`
   cursor: pointer;
   img {
     width: 100%;
+    git
   }
 `;
 
@@ -72,7 +73,7 @@ const MovieList = () => {
     const apiKey = '12cd22d5bde79dba5e1637b5fb1bddf4';
 
     axios
-      .get(`https://api.themoviedb.org/3/trending/movie/day?api_key=${apiKey}`)
+      .get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`)
       .then((response) => {
         setMovies(response.data.results);
         setLoading(false);
