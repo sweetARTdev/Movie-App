@@ -67,9 +67,9 @@ const MovieDetails = () => {
                 <div>
                     <MovieTitle data-testid="movie-title">{movie.title}</MovieTitle>
                     <MovieInfo>
-                        <p data-testid="movie-release-date">Release Date: {movie.release_date}</p>
-                        <p data-testid="movie-runtime">Runtime: {movie.runtime} minutes</p>
-                        <p data-testid="movie-overview">Overview: {movie.overview}</p>
+                        <p data-testid="movie-release-date">{movie.release_date}</p>
+                        <p data-testid="movie-runtime">{movie.runtime}</p>
+                        <p data-testid="movie-overview">{movie.overview}</p>
                     </MovieInfo>
                 </div>
             </section>

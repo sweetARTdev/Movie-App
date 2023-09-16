@@ -45,7 +45,7 @@ const Title = styled.h3`
 `;
 
 
-const MoviePoster = styled.div`
+const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,11 +95,11 @@ const MovieList = () => {
       <Title>Featured Movies</Title>
       <GridContainer>
         {movies.slice(0, 10).map((movie) => (
-          <MoviePoster key={movie.id} onClick={() => handleMoviesClick(movie.id)}>
-            <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="poster" />
-            <h3>{movie.title}</h3>
-            <p>{movie.release_date}</p>
-          </MoviePoster>
+          <Card data-testid='movie-card' key={movie.id} onClick={() => handleMoviesClick(movie.id)}>
+            <img data-testid="movie-poster" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="poster" />
+            <h3 data-testid="movie-title">{movie.title}</h3>
+            <p data-testid="movie-release-date">{movie.release_date}</p>
+          </Card>
         ))}
       </GridContainer>
     </>
