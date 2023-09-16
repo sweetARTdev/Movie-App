@@ -50,6 +50,9 @@ const Card = styled.div`
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  img {
+    width: 100%;
+  }
 `;
 
 const MovieList = () => {
