@@ -8,8 +8,6 @@ import { useNavigate } from 'react-router-dom';
 const Header = styled.header`
   text-align: center;
   
-
-//
 `;
 
 // Styled hero image
